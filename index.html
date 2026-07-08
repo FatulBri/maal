@@ -4,9 +4,13 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <meta name="description" content="PT Mitra Akselerasi Amanah Lestari (PT MAAL) — agregator merchant berbasis prinsip syariah yang menghubungkan UMKM dengan ekosistem keuangan formal melalui aplikasi Falah.">
+  <meta name="robots" content="index,follow,max-image-preview:large">
+  <meta name="author" content="PT Mitra Akselerasi Amanah Lestari">
+  <meta name="keywords" content="UMKM, syariah, Falah, QRIS, pembiayaan syariah, agregator merchant, kasir digital">
   <meta name="theme-color" content="#16C45B">
   <title>PT MAAL — Tumbuh Bersama, Usaha Lebih Ringan.</title>
   <link rel="canonical" href="https://www.maal.id/">
+  <link rel="alternate" href="https://www.maal.id/" hreflang="id-ID">
 
   <!-- Open Graph / Social -->
   <meta property="og:type" content="website">
@@ -15,6 +19,7 @@
   <meta property="og:title" content="PT MAAL — Tumbuh Bersama, Usaha Lebih Ringan.">
   <meta property="og:description" content="Agregator merchant syariah untuk UMKM — kasir digital, QRIS, dan pembiayaan wakaf produktif melalui aplikasi Falah.">
   <meta property="og:image" content="https://www.maal.id/assets/og-image.png">
+  <meta property="og:image:alt" content="PT MAAL — agregator merchant syariah untuk UMKM Indonesia">
   <meta property="og:image:width" content="1200">
   <meta property="og:image:height" content="630">
   <meta property="og:locale" content="id_ID">
@@ -39,22 +44,105 @@
   <script type="application/ld+json">
   {
     "@context": "https://schema.org",
-    "@type": "Organization",
-    "name": "PT Mitra Akselerasi Amanah Lestari",
-    "alternateName": ["PT MAAL", "MAAL"],
-    "url": "https://www.maal.id",
-    "logo": "https://www.maal.id/assets/maal-logo-nav.png",
-    "description": "Agregator merchant berbasis prinsip syariah yang menghubungkan UMKM dengan ekosistem keuangan formal melalui aplikasi Falah.",
-    "email": "salam@maal.id",
-    "telephone": "+62-813-1415-835",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "Wisma Bumiputera Lt. 18, Jl. Jend. Sudirman Kav. 75",
-      "addressLocality": "Jakarta Selatan",
-      "addressRegion": "DKI Jakarta",
-      "addressCountry": "ID"
-    },
-    "sameAs": ["https://www.maal.id"]
+    "@graph": [
+      {
+        "@type": "Organization",
+        "@id": "https://www.maal.id/#organization",
+        "name": "PT Mitra Akselerasi Amanah Lestari",
+        "alternateName": ["PT MAAL", "MAAL"],
+        "url": "https://www.maal.id",
+        "logo": "https://www.maal.id/assets/maal-logo-nav.png",
+        "description": "Agregator merchant berbasis prinsip syariah yang menghubungkan UMKM dengan ekosistem keuangan formal melalui aplikasi Falah.",
+        "email": "salam@maal.id",
+        "telephone": "+62-813-1415-835",
+        "address": {
+          "@type": "PostalAddress",
+          "streetAddress": "Wisma Bumiputera Lt. 18, Jl. Jend. Sudirman Kav. 75",
+          "addressLocality": "Jakarta Selatan",
+          "addressRegion": "DKI Jakarta",
+          "addressCountry": "ID"
+        },
+        "sameAs": ["https://www.maal.id"]
+      },
+      {
+        "@type": "WebSite",
+        "@id": "https://www.maal.id/#website",
+        "url": "https://www.maal.id/",
+        "name": "PT MAAL",
+        "description": "Agregator merchant syariah untuk UMKM Indonesia melalui aplikasi Falah.",
+        "publisher": {
+          "@id": "https://www.maal.id/#organization"
+        },
+        "inLanguage": "id-ID"
+      },
+      {
+        "@type": "WebPage",
+        "@id": "https://www.maal.id/#webpage",
+        "url": "https://www.maal.id/",
+        "name": "PT MAAL — Tumbuh Bersama, Usaha Lebih Ringan.",
+        "isPartOf": {
+          "@id": "https://www.maal.id/#website"
+        },
+        "about": {
+          "@id": "https://www.maal.id/#organization"
+        },
+        "description": "PT MAAL adalah agregator merchant berbasis prinsip syariah yang menghubungkan UMKM dengan ekosistem keuangan formal melalui aplikasi Falah.",
+        "inLanguage": "id-ID"
+      },
+      {
+        "@type": "FAQPage",
+        "mainEntity": [
+          {
+            "@type": "Question",
+            "name": "Apakah PT MAAL adalah bank?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tidak. PT MAAL bukan bank maupun lembaga pembiayaan. Kami adalah agregator merchant yang menghubungkan UMKM dengan ekosistem keuangan formal melalui aplikasi Falah."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah ada bunga dalam layanan MAAL?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Tidak ada bunga (riba). Seluruh layanan mengikuti prinsip syariah. Pembiayaan menggunakan skema ujrah, bukan bunga atas pokok."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah aplikasi Falah gratis?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Kasir digital dan pembukuan gratis sejak hari pertama. Fitur QRIS dan layanan lanjutan tersedia sesuai paket kebutuhan usaha Anda."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Siapa saja yang bisa menggunakan Falah?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Pedagang UMKM ultra mikro, warung, kuliner, toko kelontong, dan usaha kecil lainnya yang ingin mencatat transaksi dan menerima QRIS."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Bagaimana cara mengakses pembiayaan syariah?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Gunakan Falah secara rutin untuk mencatat transaksi. Rekam jejak usaha yang terbentuk otomatis membuka akses pembiayaan wakaf produktif dan mitra keuangan syariah."
+            }
+          },
+          {
+            "@type": "Question",
+            "name": "Apakah data usaha saya aman?",
+            "acceptedAnswer": {
+              "@type": "Answer",
+              "text": "Ya. Data merchant dikelola dengan standar keamanan industri, enkripsi, dan akses terbatas. Kami tidak menjual data pedagang."
+            }
+          }
+        ]
+      }
+    ]
   }
   </script>
 </head>
