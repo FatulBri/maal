@@ -1,0 +1,841 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="PT Mitra Akselerasi Amanah Lestari (PT MAAL) — agregator merchant berbasis prinsip syariah yang menghubungkan UMKM dengan ekosistem keuangan formal melalui aplikasi Falah.">
+  <meta name="theme-color" content="#16C45B">
+  <title>PT MAAL — Tumbuh Bersama, Usaha Lebih Ringan.</title>
+  <link rel="canonical" href="https://www.maal.id/">
+
+  <!-- Open Graph / Social -->
+  <meta property="og:type" content="website">
+  <meta property="og:site_name" content="PT MAAL">
+  <meta property="og:url" content="https://www.maal.id/">
+  <meta property="og:title" content="PT MAAL — Tumbuh Bersama, Usaha Lebih Ringan.">
+  <meta property="og:description" content="Agregator merchant syariah untuk UMKM — kasir digital, QRIS, dan pembiayaan wakaf produktif melalui aplikasi Falah.">
+  <meta property="og:image" content="https://www.maal.id/assets/og-image.png">
+  <meta property="og:image:width" content="1200">
+  <meta property="og:image:height" content="630">
+  <meta property="og:locale" content="id_ID">
+  <meta property="og:locale:alternate" content="en_US">
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="PT MAAL — Tumbuh Bersama, Usaha Lebih Ringan.">
+  <meta name="twitter:description" content="Agregator merchant syariah untuk UMKM melalui aplikasi Falah.">
+  <meta name="twitter:image" content="https://www.maal.id/assets/og-image.png">
+
+  <!-- Favicon -->
+  <link rel="icon" href="assets/favicon.png" type="image/png" sizes="32x32">
+  <link rel="icon" href="assets/favicon-192.png" type="image/png" sizes="192x192">
+  <link rel="apple-touch-icon" href="assets/apple-touch-icon.png">
+  <link rel="manifest" href="site.webmanifest">
+  <script>
+    (function(){var t=localStorage.getItem('maal-theme');if(t==='dark')document.documentElement.setAttribute('data-theme','dark');else if(!t&&window.matchMedia('(prefers-color-scheme: dark)').matches)document.documentElement.setAttribute('data-theme','dark');})();
+  </script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Poppins:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Organization",
+    "name": "PT Mitra Akselerasi Amanah Lestari",
+    "alternateName": ["PT MAAL", "MAAL"],
+    "url": "https://www.maal.id",
+    "logo": "https://www.maal.id/assets/maal-logo-nav.png",
+    "description": "Agregator merchant berbasis prinsip syariah yang menghubungkan UMKM dengan ekosistem keuangan formal melalui aplikasi Falah.",
+    "email": "salam@maal.id",
+    "telephone": "+62-813-1415-835",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Wisma Bumiputera Lt. 18, Jl. Jend. Sudirman Kav. 75",
+      "addressLocality": "Jakarta Selatan",
+      "addressRegion": "DKI Jakarta",
+      "addressCountry": "ID"
+    },
+    "sameAs": ["https://www.maal.id"]
+  }
+  </script>
+</head>
+<body>
+
+  <div class="scroll-progress" id="scrollProgress" aria-hidden="true"></div>
+
+  <!-- Navigation -->
+  <header class="header" id="header">
+    <nav class="nav container">
+      <a href="#hero" class="nav__logo">
+        <picture>
+          <source srcset="assets/maal-logo-nav.webp" type="image/webp">
+          <img src="assets/maal-logo-nav.png" alt="Maal — PT Mitra Akselerasi Amanah Lestari" class="nav__logo-img" width="115" height="44">
+        </picture>
+      </a>
+      <ul class="nav__menu" id="navMenu">
+        <li><a href="#tentang" class="nav__link" data-i18n="nav.about">Tentang</a></li>
+        <li><a href="#layanan" class="nav__link" data-i18n="nav.services">Layanan</a></li>
+        <li><a href="#pembiayaan" class="nav__link" data-i18n="nav.financing">Pembiayaan</a></li>
+        <li><a href="#tim" class="nav__link" data-i18n="nav.team">Tim</a></li>
+        <li><a href="#kontak" class="nav__link nav__link--cta" data-i18n="nav.contact">Kontak</a></li>
+      </ul>
+      <div class="nav__controls">
+        <button class="nav__control-btn" id="langToggle" type="button" aria-label="Switch language">EN</button>
+        <button class="nav__control-btn" id="themeToggle" type="button" aria-label="Toggle dark mode">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 12.79A9 9 0 1111.21 3 7 7 0 0021 12.79z"/></svg>
+        </button>
+        <button class="nav__toggle" id="navToggle" aria-label="Buka menu navigasi" aria-expanded="false">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+
+    <!-- A. Hero Section -->
+    <section class="hero" id="hero">
+      <div class="hero__pattern" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--1" aria-hidden="true"></div>
+      <div class="hero__blob hero__blob--2" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <div class="hero__content fade-in">
+          <span class="hero__badge">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M12 2C6.48 2 2 6.48 2 12s4.48 10 10 10 10-4.48 10-10S17.52 2 12 2zm-1 17.93c-3.95-.49-7-3.85-7-7.93 0-.62.08-1.21.21-1.79L9 15v1c0 1.1.9 2 2 2v1.93zm6.9-2.54c-.26-.81-1-1.39-1.9-1.39h-1v-3c0-.55-.45-1-1-1H8v-2h2c.55 0 1-.45 1-1V7h2c1.1 0 2-.9 2-2v-.41c2.93 1.19 5 4.06 5 7.41 0 2.08-.8 3.97-2.1 5.39z"/></svg>
+            <span data-i18n="hero.badge">Agregator Merchant Syariah</span>
+          </span>
+          <h1 class="hero__title"><span data-i18n="hero.title1">Tumbuh Bersama,</span><br><span class="hero__title-accent" data-i18n="hero.title2">Usaha Lebih Ringan.</span></h1>
+          <p class="hero__subtitle" data-i18n="hero.subtitle" data-i18n-html="true">PT MAAL adalah agregator merchant berbasis prinsip syariah yang menghubungkan UMKM dengan ekosistem keuangan formal melalui aplikasi <strong>Falah</strong>.</p>
+          <div class="hero__actions">
+            <a href="#download" class="btn btn--primary">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M21 15v4a2 2 0 01-2 2H5a2 2 0 01-2-2v-4M7 10l5 5 5-5M12 15V3"/></svg>
+              <span data-i18n="hero.cta1">Download Aplikasi Falah</span>
+            </a>
+            <a href="#tentang" class="btn btn--secondary" data-i18n="hero.cta2">Pelajari Lebih Lanjut</a>
+          </div>
+          <div class="hero__trust">
+            <span class="hero__trust-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              <span data-i18n="hero.trust1">Berprinsip Syariah</span>
+            </span>
+            <span class="hero__trust-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+              <span data-i18n="hero.trust2">OJK Compliant Ready</span>
+            </span>
+            <span class="hero__trust-item">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+              <span data-i18n="hero.trust3">QRIS Terintegrasi</span>
+            </span>
+          </div>
+        </div>
+        <div class="hero__visual fade-in fade-in--delay">
+          <div class="hero-showcase">
+            <div class="phone-mockup">
+              <div class="phone-mockup__glow" aria-hidden="true"></div>
+              <div class="phone-mockup__frame">
+                <div class="phone-mockup__screen phone-mockup__screen--falah">
+                  <div class="falah-login" aria-hidden="true">
+                    <picture>
+                      <source srcset="assets/falah-logo-mockup.webp" type="image/webp">
+                      <img src="assets/falah-logo-mockup.png" alt="Falah" class="falah-login__logo" width="70" height="72" loading="lazy">
+                    </picture>
+                    <h3 class="falah-login__title">Selamat Datang!</h3>
+                    <p class="falah-login__subtitle">Silakan masuk untuk melanjutkan</p>
+                    <div class="falah-login__field">
+                      <label class="falah-login__label">Nomor Telepon atau Email</label>
+                      <div class="falah-login__input">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+                        <span>857xxxxxxxx</span>
+                      </div>
+                    </div>
+                    <div class="falah-login__field">
+                      <label class="falah-login__label">Password</label>
+                      <div class="falah-login__input">
+                        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="11" width="18" height="11" rx="2"/><path d="M7 11V7a5 5 0 0110 0v4"/></svg>
+                        <span>••••••••</span>
+                      </div>
+                    </div>
+                    <div class="falah-login__row">
+                      <span class="falah-login__check"><svg width="10" height="10" viewBox="0 0 12 12"><path d="M2 6l3 3 5-5" fill="none" stroke="#fff" stroke-width="1.8" stroke-linecap="round"/></svg> Ingat Saya</span>
+                      <span class="falah-login__link">Lupa password?</span>
+                    </div>
+                    <div class="falah-login__btn">Masuk →</div>
+                    <div class="falah-login__divider"><span>ATAU</span></div>
+                    <p class="falah-login__signup">Belum punya akun? <span>Daftar di sini</span></p>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="hero-showcase__cards" aria-hidden="true">
+              <div class="float-card float-card--1">
+                <span class="float-card__icon float-card__icon--green">✓</span>
+                <div>
+                  <strong data-i18n="hero.float1t">Pembayaran QRIS</strong>
+                  <span data-i18n="hero.float1d">Rp 52.000 diterima</span>
+                </div>
+              </div>
+              <div class="float-card float-card--2">
+                <span class="float-card__icon float-card__icon--amber">🎙</span>
+                <div>
+                  <strong data-i18n="hero.float2t">Si Falah</strong>
+                  <span data-i18n="hero.float2d">"Catat 3 es teh manis"</span>
+                </div>
+              </div>
+              <div class="float-card float-card--3">
+                <span class="float-card__stat">+12%</span>
+                <div>
+                  <strong data-i18n="hero.float3t">Pendapatan naik</strong>
+                  <span data-i18n="hero.float3d">Dibanding minggu lalu</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Partner Marquee -->
+    <div class="marquee-strip" aria-label="Ekosistem keuangan">
+      <div class="marquee-strip__label" data-i18n="marquee.label">Ekosistem Terintegrasi</div>
+      <div class="marquee-strip__track">
+        <div class="marquee-strip__content" id="marqueeContent">
+          <span>QRIS Nasional</span><span>•</span>
+          <span>Bank Syariah</span><span>•</span>
+          <span>E-Wallet</span><span>•</span>
+          <span>Wakaf Produktif</span><span>•</span>
+          <span>UMKM Ultra Mikro</span><span>•</span>
+          <span>Koperasi</span><span>•</span>
+          <span>BPR & LPD</span><span>•</span>
+          <span>Asisten AI Si Falah</span><span>•</span>
+          <span>QRIS Nasional</span><span>•</span>
+          <span>Bank Syariah</span><span>•</span>
+          <span>E-Wallet</span><span>•</span>
+          <span>Wakaf Produktif</span><span>•</span>
+          <span>UMKM Ultra Mikro</span><span>•</span>
+          <span>Koperasi</span><span>•</span>
+          <span>BPR & LPD</span><span>•</span>
+          <span>Asisten AI Si Falah</span><span>•</span>
+        </div>
+      </div>
+    </div>
+
+    <!-- B. Masalah yang Diselesaikan -->
+    <section class="section section--stats" id="masalah">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__label" data-i18n="stats.label">UMKM: Tulang Punggung yang Belum Terlayani</span>
+          <h2 class="section__title" data-i18n="stats.title">Perdagangan dan kuliner adalah wajah terbesar UMKM Indonesia — ekonomi rakyat yang hidup setiap hari.</h2>
+        </div>
+        <div class="stats-grid fade-in">
+          <div class="stat-card">
+            <span class="stat-card__number" data-count="65.5" data-suffix=" Juta" data-decimals="1">0</span>
+            <span class="stat-card__label" data-i18n="stats.s1">unit UMKM di Indonesia, 99% dari seluruh unit usaha</span>
+          </div>
+          <div class="stat-card stat-card--accent">
+            <span class="stat-card__number" data-count="61" data-suffix="%" data-decimals="0">0</span>
+            <span class="stat-card__label" data-i18n="stats.s2">kontribusi terhadap PDB nasional</span>
+          </div>
+          <div class="stat-card stat-card--amber">
+            <span class="stat-card__number" data-count="97" data-suffix="%" data-decimals="0">0</span>
+            <span class="stat-card__label" data-i18n="stats.s3">penyerapan tenaga kerja nasional</span>
+          </div>
+        </div>
+        <blockquote class="insight-quote fade-in">
+          <svg class="insight-quote__icon" width="32" height="32" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M6 17h3l2-4V7H5v6h3zm8 0h3l2-4V7h-6v6h3z"/></svg>
+          <p data-i18n="stats.quote">Akar masalah: belum terlihat sistem keuangan formal — bukan tidak layak dibiayai.</p>
+        </blockquote>
+        <p class="section__source fade-in" data-i18n="stats.source">Sumber: Kementerian Koperasi dan UKM; Kemenko Perekonomian RI.</p>
+      </div>
+    </section>
+
+    <!-- C. Tentang PT MAAL -->
+    <section class="section section--about" id="tentang">
+      <div class="container">
+        <div class="about-intro fade-in">
+          <span class="section__label" data-i18n="about.label">Tentang PT MAAL</span>
+          <h2 class="section__title" data-i18n="about.title">Agregator merchant syariah untuk UMKM Indonesia</h2>
+          <p class="about-intro__text" data-i18n="about.text">PT Mitra Akselerasi Amanah Lestari (PT MAAL) adalah agregator merchant berbasis prinsip syariah yang menghubungkan UMKM dengan ekosistem keuangan formal.</p>
+          <p class="about-intro__highlight" data-i18n="about.highlight" data-i18n-html="true">PT MAAL adalah perusahaannya; <strong>Falah</strong> adalah aplikasinya — dua nama, satu amanah: membuat setiap usaha kecil terlihat, tercatat, dan tumbuh.</p>
+        </div>
+        <div class="name-cards fade-in">
+          <div class="name-card">
+            <div class="name-card__icon name-card__icon--green">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 class="name-card__title" data-i18n="about.maalTitle">Makna "Maal"</h3>
+            <p class="name-card__text" data-i18n="about.maalText">Dari bahasa Arab: harta atau aset, seperti dalam Zakat Maal, Wakaf Maal, dan Baitul Maal. Bukan sekadar kekayaan, melainkan amanah yang membawa manfaat.</p>
+          </div>
+          <div class="name-card">
+            <div class="name-card__icon name-card__icon--lime">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 class="name-card__title" data-i18n="about.falahTitle">Makna "Falah"</h3>
+            <p class="name-card__text" data-i18n="about.falahText">Keberuntungan dan kesejahteraan yang utuh, dunia dan akhirat. Tujuan dari setiap transaksi yang tercatat jujur dan tumbuh berkah.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- D. Visi, Misi & Nilai Inti -->
+    <section class="section section--vision" id="visi">
+      <div class="container">
+        <div class="vision-grid fade-in">
+          <div class="vision-card">
+            <div class="vision-card__icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg>
+            </div>
+            <h3 data-i18n="vision.vision">Visi</h3>
+            <p data-i18n="vision.visionText">Menjadi infrastruktur ekonomi paling terpercaya di Indonesia, mengakselerasi pertumbuhan UMKM secara berkelanjutan melalui teknologi dan hubungan manusia yang bermakna.</p>
+          </div>
+          <div class="vision-card">
+            <div class="vision-card__icon vision-card__icon--lime">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+            </div>
+            <h3 data-i18n="vision.mission">Misi</h3>
+            <p data-i18n="vision.missionText">Membangun ekosistem finansial inklusif yang memadukan kepercayaan manusia dengan sistem cerdas, memperluas akses pembiayaan syariah, dan menciptakan dampak jangka panjang bagi UMKM.</p>
+          </div>
+        </div>
+        <div class="values-section fade-in">
+          <h3 class="values-section__title" data-i18n="vision.values">Nilai Inti</h3>
+          <div class="values-grid">
+            <div class="value-item">
+              <div class="value-item__icon value-item__icon--green">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s8-4 8-10V5l-8-3-8 3v7c0 6 8 10 8 10z"/></svg>
+              </div>
+              <span data-i18n="vision.v1">Kepercayaan</span>
+            </div>
+            <div class="value-item">
+              <div class="value-item__icon value-item__icon--lime">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
+              </div>
+              <span data-i18n="vision.v2">Akselerasi</span>
+            </div>
+            <div class="value-item">
+              <div class="value-item__icon value-item__icon--amber">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><path d="M8 14s1.5 2 4 2 4-2 4-2"/><line x1="9" y1="9" x2="9.01" y2="9"/><line x1="15" y1="9" x2="15.01" y2="9"/></svg>
+              </div>
+              <span data-i18n="vision.v3">Inklusivitas</span>
+            </div>
+            <div class="value-item">
+              <div class="value-item__icon value-item__icon--green">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22c5.523 0 10-4.477 10-10S17.523 2 12 2 2 6.477 2 12s4.477 10 10 10z"/><path d="M12 6v6l4 2"/></svg>
+              </div>
+              <span data-i18n="vision.v4">Keberlanjutan</span>
+            </div>
+            <div class="value-item">
+              <div class="value-item__icon value-item__icon--lime">
+                <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+              </div>
+              <span data-i18n="vision.v5">Kolaborasi</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- E. Aplikasi Falah -->
+    <section class="section section--services" id="layanan">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__label" data-i18n="services.label">Aplikasi Falah</span>
+          <h2 class="section__title" data-i18n="services.title">Enam Layanan dalam Satu Genggaman</h2>
+          <p class="section__desc" data-i18n="services.desc">Satu aplikasi untuk mencatat, menerima pembayaran, dan bertumbuh bersama komunitas.</p>
+        </div>
+        <div class="services-grid fade-in stagger-group">
+          <div class="service-card">
+            <div class="service-card__icon service-card__icon--green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+            </div>
+            <h3 data-i18n="services.s1t">Kasir Digital & Pembukuan</h3>
+            <p data-i18n="services.s1d">Gratis sejak hari pertama, pencatatan otomatis, laporan rapi.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon service-card__icon--lime">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/><rect x="14" y="14" width="7" height="7"/></svg>
+            </div>
+            <h3 data-i18n="services.s2t">Pembayaran QRIS</h3>
+            <p data-i18n="services.s2d">Terima pembayaran digital dari semua bank & e-wallet.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon service-card__icon--amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="2" y="4" width="20" height="16" rx="2"/><path d="M12 8v8M8 12h8"/></svg>
+            </div>
+            <h3 data-i18n="services.s3t">Dompet Merchant</h3>
+            <p data-i18n="services.s3d">Dana penjualan terkumpul aman, mudah ditarik kapan pun.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon service-card__icon--green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            </div>
+            <h3 data-i18n="services.s4t">Komunitas Pedagang</h3>
+            <p data-i18n="services.s4d">Jaringan sesama UMKM untuk belajar dan saling menguatkan.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon service-card__icon--lime">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2L2 7l10 5 10-5-10-5zM2 17l10 5 10-5M2 12l10 5 10-5"/></svg>
+            </div>
+            <h3 data-i18n="services.s5t">Akses Pembiayaan Syariah</h3>
+            <p data-i18n="services.s5d">Rekam jejak usaha membuka pintu pembiayaan wakaf produktif.</p>
+          </div>
+          <div class="service-card">
+            <div class="service-card__icon service-card__icon--amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 11.08V12a10 10 0 11-5.93-9.14"/><polyline points="22 4 12 14.01 9 11.01"/></svg>
+            </div>
+            <h3 data-i18n="services.s6t">Layanan Terkelola</h3>
+            <p data-i18n="services.s6d">Pendampingan, pelatihan, konsultasi, pembiayaan, hingga pengembangan usaha berkelanjutan.</p>
+          </div>
+        </div>
+        <div class="tech-features fade-in">
+          <div class="tech-features__inner">
+            <span class="tech-features__label" data-i18n="services.tech">Fitur Teknis</span>
+            <div class="tech-features__list" id="techTags">
+              <span class="tech-tag">POS multi-outlet</span>
+              <span class="tech-tag">Pembukuan double-entry otomatis</span>
+              <span class="tech-tag">Manajemen piutang</span>
+              <span class="tech-tag">Inventori real-time</span>
+              <span class="tech-tag tech-tag--highlight">Asisten AI Si Falah</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- F. Si Falah -->
+    <section class="section section--ai" id="si-falah">
+      <div class="container">
+        <div class="ai-header fade-in">
+          <div class="ai-header__text">
+            <span class="section__label" data-i18n="ai.label">Si Falah — Asisten AI</span>
+            <h2 class="section__title" data-i18n="ai.title">Cukup diajak bicara</h2>
+            <p class="section__desc" data-i18n="ai.desc">Asisten cerdas di dalam aplikasi Falah yang mencatat, menghitung, dan mengingatkan — tanpa mengganggu pelayanan Anda.</p>
+          </div>
+          <div class="ai-header__visual">
+            <div class="ai-orb" aria-hidden="true">
+              <div class="ai-orb__ring"></div>
+              <div class="ai-orb__core">
+                <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2a3 3 0 00-3 3v7a3 3 0 006 0V5a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="22"/></svg>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="ai-features fade-in">
+          <div class="ai-feature">
+            <div class="ai-feature__icon ai-feature__icon--green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 1a3 3 0 00-3 3v8a3 3 0 006 0V4a3 3 0 00-3-3z"/><path d="M19 10v2a7 7 0 01-14 0v-2"/><line x1="12" y1="19" x2="12" y2="23"/><line x1="8" y1="23" x2="16" y2="23"/></svg>
+            </div>
+            <h3 data-i18n="ai.f1t">Input Suara</h3>
+            <p data-i18n="ai.f1d">Rekam transaksi sambil melayani pembeli, tanpa berhenti, tanpa mengetik.</p>
+          </div>
+          <div class="ai-feature">
+            <div class="ai-feature__icon ai-feature__icon--lime">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 15a2 2 0 01-2 2H7l-4 4V5a2 2 0 012-2h14a2 2 0 012 2z"/></svg>
+            </div>
+            <h3 data-i18n="ai.f2t">Bahasa Sehari-hari</h3>
+            <p data-i18n="ai.f2d">Si Falah paham "bahasa warung", item, jumlah, dan nominal diurai otomatis.</p>
+          </div>
+          <div class="ai-feature">
+            <div class="ai-feature__icon ai-feature__icon--amber">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="3" width="18" height="18" rx="2"/><circle cx="8.5" cy="8.5" r="1.5"/><polyline points="21 15 16 10 5 21"/></svg>
+            </div>
+            <h3 data-i18n="ai.f3t">Scan Struk</h3>
+            <p data-i18n="ai.f3d">Foto nota belanja; stok dan arus kas diperbarui otomatis.</p>
+          </div>
+          <div class="ai-feature">
+            <div class="ai-feature__icon ai-feature__icon--green">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><polyline points="22 12 18 12 15 21 9 3 6 12 2 12"/></svg>
+            </div>
+            <h3 data-i18n="ai.f4t">Rekam Jejak Usaha</h3>
+            <p data-i18n="ai.f4d">Catatan harian membentuk profil usaha yang membuka akses pembiayaan.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- G. Pembiayaan Wakaf Produktif -->
+    <section class="section section--wakaf" id="pembiayaan">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__label" data-i18n="wakaf.label">Pembiayaan Berbasis Wakaf Produktif</span>
+          <h2 class="section__title" data-i18n="wakaf.title">Dana umat, dikelola amanah, bergulir kembali untuk umat.</h2>
+        </div>
+        <div class="wakaf-flow fade-in">
+          <div class="wakaf-step">
+            <div class="wakaf-step__number">1</div>
+            <div class="wakaf-step__content">
+              <h3 data-i18n="wakaf.s1t">Dihimpun</h3>
+              <p data-i18n="wakaf.s1d">Dana wakaf produktif dihimpun dan dikelola oleh nazhir (yayasan).</p>
+            </div>
+          </div>
+          <div class="wakaf-step__arrow" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+          <div class="wakaf-step">
+            <div class="wakaf-step__number">2</div>
+            <div class="wakaf-step__content">
+              <h3 data-i18n="wakaf.s2t">Disalurkan</h3>
+              <p data-i18n="wakaf.s2d">Pembiayaan mikro syariah bagi merchant terkurasi melalui aplikasi Falah.</p>
+            </div>
+          </div>
+          <div class="wakaf-step__arrow" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+          <div class="wakaf-step">
+            <div class="wakaf-step__number">3</div>
+            <div class="wakaf-step__content">
+              <h3 data-i18n="wakaf.s3t">Ujrah, Bukan Bunga</h3>
+              <p data-i18n="wakaf.s3d">Imbal jasa berupa biaya layanan tetap, bukan bunga atas pokok.</p>
+            </div>
+          </div>
+          <div class="wakaf-step__arrow" aria-hidden="true">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+          </div>
+          <div class="wakaf-step">
+            <div class="wakaf-step__number">4</div>
+            <div class="wakaf-step__content">
+              <h3 data-i18n="wakaf.s4t">Bergulir Kembali</h3>
+              <p data-i18n="wakaf.s4d">Pokok kembali ke dana wakaf; manfaat terus mengalir bagi umat.</p>
+            </div>
+          </div>
+        </div>
+        <p class="wakaf-note fade-in"><em data-i18n="wakaf.note">Seluruh penyaluran mengikuti prinsip syariah, tanpa bunga, transparan, dan tercatat penuh dalam sistem.</em></p>
+      </div>
+    </section>
+
+    <!-- H. Manajemen -->
+    <section class="section section--team" id="tim">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__label" data-i18n="team.label">Manajemen</span>
+          <h2 class="section__title" data-i18n="team.title">Tim yang Membangun Amanah</h2>
+        </div>
+        <div class="team-grid fade-in">
+          <div class="team-card team-card--featured">
+            <div class="team-card__avatar team-card__avatar--photo">
+              <picture>
+                <source srcset="assets/team-ceo-maryadi.webp" type="image/webp">
+                <img src="assets/team-ceo-maryadi.png" alt="Maryadi Aryo Laksmono" class="team-card__avatar-img" width="72" height="72" loading="lazy">
+              </picture>
+            </div>
+            <div class="team-card__body">
+              <h3 class="team-card__name">Maryadi Aryo Laksmono</h3>
+              <p class="team-card__role">Founder & CEO</p>
+              <p class="team-card__bio">25+ tahun pengalaman perbankan institusional: Union Bank of California, ABN AMRO, Bank Niaga Private Banking, CIMB Niaga Syariah, PT. Kresna Graha Sekurindo Tbk, dan Phillip Capital Singapore.</p>
+            </div>
+          </div>
+          <div class="team-card">
+            <div class="team-card__avatar team-card__avatar--photo">
+              <picture>
+                <source srcset="assets/team-vceo-abib.webp" type="image/webp">
+                <img src="assets/team-vceo-abib.png" alt="Abib Zebacth Efod" class="team-card__avatar-img" width="64" height="64" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="team-card__name">Abib Zebacth Efod</h3>
+            <p class="team-card__role">Vice CEO & COO</p>
+          </div>
+          <div class="team-card">
+            <div class="team-card__avatar team-card__avatar--photo">
+              <picture>
+                <source srcset="assets/team-advisor-fajar.webp" type="image/webp">
+                <img src="assets/team-advisor-fajar.png" alt="Fajar Nurmansyah" class="team-card__avatar-img" width="64" height="64" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="team-card__name">Fajar Nurmansyah</h3>
+            <p class="team-card__role">Advisor to CEO</p>
+          </div>
+          <div class="team-card">
+            <div class="team-card__avatar team-card__avatar--photo">
+              <picture>
+                <source srcset="assets/team-cfo-humaira.webp" type="image/webp">
+                <img src="assets/team-cfo-humaira.png" alt="Humaira Zahra" class="team-card__avatar-img" width="64" height="64" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="team-card__name">Humaira Zahra</h3>
+            <p class="team-card__role">Chief Financial Officer</p>
+          </div>
+          <div class="team-card">
+            <div class="team-card__avatar team-card__avatar--photo">
+              <picture>
+                <source srcset="assets/team-cto-ketut.webp" type="image/webp">
+                <img src="assets/team-cto-ketut.png" alt="Ketut Andi Setiawan" class="team-card__avatar-img" width="64" height="64" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="team-card__name">Ketut Andi Setiawan</h3>
+            <p class="team-card__role">Chief Technology Officer</p>
+          </div>
+          <div class="team-card">
+            <div class="team-card__avatar team-card__avatar--photo">
+              <picture>
+                <source srcset="assets/team-cro-farina.webp" type="image/webp">
+                <img src="assets/team-cro-farina.png" alt="Farina H Kartasasmita" class="team-card__avatar-img" width="64" height="64" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="team-card__name">Farina H Kartasasmita</h3>
+            <p class="team-card__role">Chief Risk Officer</p>
+          </div>
+          <div class="team-card">
+            <div class="team-card__avatar team-card__avatar--photo">
+              <picture>
+                <source srcset="assets/team-cmo-adha.webp" type="image/webp">
+                <img src="assets/team-cmo-adha.png" alt="Adha Wahyudi" class="team-card__avatar-img" width="64" height="64" loading="lazy">
+              </picture>
+            </div>
+            <h3 class="team-card__name">Adha Wahyudi</h3>
+            <p class="team-card__role">Chief Marketing Officer</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- I. Peta Jalan -->
+    <section class="section section--roadmap" id="roadmap">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__label" data-i18n="roadmap.label">Peta Jalan</span>
+          <h2 class="section__title" data-i18n="roadmap.title">Perjalanan Menuju Inklusi Finansial</h2>
+        </div>
+        <div class="roadmap fade-in">
+          <div class="roadmap__line" aria-hidden="true"></div>
+          <div class="roadmap__item">
+            <div class="roadmap__dot"></div>
+            <div class="roadmap__content">
+              <span class="roadmap__phase" data-i18n="roadmap.p1">Peluncuran</span>
+              <p data-i18n="roadmap.p1d">Kasir digital & QRIS mulai beroperasi.</p>
+            </div>
+          </div>
+          <div class="roadmap__item">
+            <div class="roadmap__dot"></div>
+            <div class="roadmap__content">
+              <span class="roadmap__phase" data-i18n="roadmap.p2">Bulan 4–6</span>
+              <p data-i18n="roadmap.p2d">Dompet merchant aktif untuk seluruh mitra.</p>
+            </div>
+          </div>
+          <div class="roadmap__item">
+            <div class="roadmap__dot"></div>
+            <div class="roadmap__content">
+              <span class="roadmap__phase" data-i18n="roadmap.p3">Tahun 1</span>
+              <p data-i18n="roadmap.p3d">Pembiayaan wakaf produktif mulai disalurkan.</p>
+            </div>
+          </div>
+          <div class="roadmap__item">
+            <div class="roadmap__dot roadmap__dot--final"></div>
+            <div class="roadmap__content">
+              <span class="roadmap__phase" data-i18n="roadmap.p4">Tahun 2+</span>
+              <p data-i18n="roadmap.p4d">Perluasan nasional bersama LPD, BPR & Koperasi.</p>
+            </div>
+          </div>
+        </div>
+        <p class="roadmap-note fade-in" data-i18n="roadmap.note">Distribusi memanfaatkan jaringan kepercayaan komunitas yang sudah ada, bukan membangunnya dari nol.</p>
+      </div>
+    </section>
+
+    <!-- Social Proof / Testimoni -->
+    <section class="section section--testimonials" id="testimoni">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__label" data-i18n="testimonial.label">Suara Pedagang</span>
+          <h2 class="section__title" data-i18n="testimonial.title">Dipercaya pedagang, dirancang untuk keseharian</h2>
+        </div>
+        <div class="testimonial-grid fade-in">
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p data-i18n="testimonial.t1">"Dulu catat manual di buku, sering lupa. Sekarang cukup bilang ke Si Falah sambil masak — rapi sendiri."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">BS</div>
+              <div>
+                <strong>Bu Siti</strong>
+                <span>Warung Nasi, Jakarta Selatan</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card testimonial-card--featured">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p data-i18n="testimonial.t2">"QRIS langsung masuk, dompet merchant jelas. Akhirnya usaha kecil saya punya rekam jejak yang bisa dipercaya bank."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">AP</div>
+              <div>
+                <strong>Pak Andi</strong>
+                <span>Kedai Kopi, Bandung</span>
+              </div>
+            </div>
+          </div>
+          <div class="testimonial-card">
+            <div class="testimonial-card__stars">★★★★★</div>
+            <p data-i18n="testimonial.t3">"Komunitas pedagangnya hangat. Bisa tanya-tanya soal pembukuan tanpa malu — karena semua sama-sama UMKM."</p>
+            <div class="testimonial-card__author">
+              <div class="testimonial-card__avatar">DR</div>
+              <div>
+                <strong>Dewi Rahayu</strong>
+                <span>Toko Kelontong, Surabaya</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ -->
+    <section class="section section--faq" id="faq">
+      <div class="container">
+        <div class="section__header fade-in">
+          <span class="section__label" data-i18n="faq.label">Pertanyaan Umum</span>
+          <h2 class="section__title" data-i18n="faq.title">Yang Sering Ditanyakan</h2>
+          <p class="section__desc" data-i18n="faq.desc">Jawaban singkat untuk pedagang UMKM dan mitra institusi.</p>
+        </div>
+        <div class="faq-list fade-in">
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-i18n="faq.q1">Apakah PT MAAL adalah bank?</span>
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer"><p data-i18n="faq.a1">Tidak. PT MAAL bukan bank maupun lembaga pembiayaan. Kami adalah agregator merchant yang menghubungkan UMKM dengan ekosistem keuangan formal — PJP, bank syariah, nazhir wakaf, dan mitra pembiayaan — melalui aplikasi Falah.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-i18n="faq.q2">Apakah ada bunga dalam layanan MAAL?</span>
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer"><p data-i18n="faq.a2">Tidak ada bunga (riba). Seluruh layanan mengikuti prinsip syariah. Pembiayaan menggunakan skema ujrah — biaya layanan tetap, bukan bunga atas pokok. Dana wakaf produktif dikelola transparan dan tercatat penuh.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-i18n="faq.q3">Apakah aplikasi Falah gratis?</span>
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer"><p data-i18n="faq.a3">Kasir digital dan pembukuan gratis sejak hari pertama. Fitur QRIS, dompet merchant, dan layanan lanjutan tersedia sesuai paket dan kebutuhan usaha Anda — tanpa biaya tersembunyi yang membingungkan.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-i18n="faq.q4">Siapa saja yang bisa menggunakan Falah?</span>
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer"><p data-i18n="faq.a4">Pedagang UMKM ultra mikro — warung, kuliner, toko kelontong, dan usaha kecil lainnya — yang ingin mencatat transaksi, menerima QRIS, dan membangun rekam jejak usaha untuk akses pembiayaan syariah.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-i18n="faq.q5">Bagaimana cara mengakses pembiayaan syariah?</span>
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer"><p data-i18n="faq.a5">Gunakan Falah secara rutin untuk mencatat transaksi. Rekam jejak usaha yang terbentuk otomatis membuka pintu pembiayaan wakaf produktif dan mitra keuangan syariah — berdasarkan profil usaha, bukan jaminan rumah atau BPKB.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-i18n="faq.q6">Apakah data usaha saya aman?</span>
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer"><p data-i18n="faq.a6" data-i18n-html="true">Ya. Data merchant dikelola dengan standar keamanan industri, enkripsi, dan akses terbatas. Kami tidak menjual data pedagang. Detail lengkap tercantum di <a href="privacy-policy.html">Kebijakan Privasi</a> kami.</p></div>
+          </div>
+          <div class="faq-item">
+            <button class="faq-item__question" aria-expanded="false">
+              <span data-i18n="faq.q7">Apakah MAAL diawasi OJK?</span>
+              <svg class="faq-item__icon" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M6 9l6 6 6-6"/></svg>
+            </button>
+            <div class="faq-item__answer"><p data-i18n="faq.a7">PT MAAL beroperasi sebagai agregator merchant dan berkoordinasi dengan mitra yang berizin dan berlisensi — termasuk PJP terdaftar Bank Indonesia dan lembaga keuangan syariah — sesuai regulasi yang berlaku.</p></div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- J. CTA Download -->
+    <section class="section section--download" id="download">
+      <div class="container">
+        <div class="download-box fade-in">
+          <div class="download-box__pattern" aria-hidden="true"></div>
+          <h2 class="download-box__title"><span data-i18n="download.title1">Tumbuh Bersama,</span><br><span data-i18n="download.title2">Usaha Lebih Ringan.</span></h2>
+          <p class="download-box__desc" data-i18n="download.desc">Mulai catat, terima pembayaran, dan tumbuh bersama ribuan pedagang UMKM di seluruh Indonesia.</p>
+          <div class="download-box__badges">
+            <a href="#" class="store-badge" id="appStoreBadge" data-store="ios" aria-label="Download di App Store">
+              <span class="store-badge__soon" data-i18n="download.soon">Segera Hadir</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11z"/></svg>
+              <div>
+                <span class="store-badge__small" data-i18n="download.storeSmall">Download di</span>
+                <span class="store-badge__large" data-i18n="download.appStore">App Store</span>
+              </div>
+            </a>
+            <a href="#" class="store-badge" id="googlePlayBadge" data-store="android" aria-label="Download di Google Play">
+              <span class="store-badge__soon" data-i18n="download.soon">Segera Hadir</span>
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M3.609 1.814L13.792 12 3.61 22.186a1.005 1.005 0 01-.294-.707V2.521c0-.265.105-.52.294-.707zM14.5 12.707l2.302 2.302-10.937 6.333 8.635-8.635zM16.396 10.812L19.903 8.86A1.005 1.005 0 0121 9.725v4.55a1.005 1.005 0 01-1.097.865l-3.507-1.952-2.302-2.302 2.302-2.174zM14.5 11.293L5.865 2.658l10.937 6.333L14.5 11.293z"/></svg>
+              <div>
+                <span class="store-badge__small" data-i18n="download.storeSmall">Download di</span>
+                <span class="store-badge__large" data-i18n="download.googlePlay">Google Play</span>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- K. Footer -->
+  <footer class="footer" id="kontak">
+    <div class="container">
+      <div class="footer__grid">
+        <div class="footer__brand">
+          <a href="#hero" class="footer__logo">
+            <picture>
+              <source srcset="assets/maal-logo.webp" type="image/webp">
+              <img src="assets/maal-logo.png" alt="Maal" class="footer__logo-img" width="146" height="56">
+            </picture>
+          </a>
+          <p class="footer__company">PT Mitra Akselerasi Amanah Lestari</p>
+          <p class="footer__tagline" data-i18n="footer.tagline">Tumbuh Bersama, Usaha Lebih Ringan.</p>
+        </div>
+        <div class="footer__contact">
+          <h4 data-i18n="footer.contact">Kontak</h4>
+          <ul>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0118 0z"/><circle cx="12" cy="10" r="3"/></svg>
+              <a href="https://www.google.com/maps/search/?api=1&amp;query=Wisma+Bumiputera+Lt.+18,+Jl.+Jend.+Sudirman+Kav.+75,+Jakarta+Selatan" target="_blank" rel="noopener noreferrer">Wisma Bumiputera Lt. 18, Jl. Jend. Sudirman Kav. 75, Jakarta Selatan</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+              <a href="mailto:salam@maal.id">salam@maal.id</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg>
+              <a href="tel:+628131415835">0813 1415 835</a>
+            </li>
+            <li>
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="10"/><line x1="2" y1="12" x2="22" y2="12"/><path d="M12 2a15.3 15.3 0 014 10 15.3 15.3 0 01-4 10 15.3 15.3 0 01-4-10 15.3 15.3 0 014-10z"/></svg>
+              <a href="https://www.maal.id">www.maal.id</a>
+            </li>
+          </ul>
+        </div>
+        <div class="footer__nav">
+          <h4 data-i18n="footer.nav">Navigasi</h4>
+          <ul>
+            <li><a href="#tentang" data-i18n="nav.about">Tentang</a></li>
+            <li><a href="#layanan" data-i18n="nav.services">Layanan</a></li>
+            <li><a href="#pembiayaan" data-i18n="nav.financing">Pembiayaan</a></li>
+            <li><a href="#tim" data-i18n="nav.team">Tim</a></li>
+            <li><a href="#faq" data-i18n="footer.faq">FAQ</a></li>
+            <li><a href="#download" data-i18n="footer.dl">Download Falah</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer__bottom">
+        <div class="footer__legal">
+          <a href="#faq" data-i18n="footer.faq">FAQ</a>
+          <span aria-hidden="true">·</span>
+          <a href="privacy-policy.html" data-i18n="footer.privacy">Kebijakan Privasi</a>
+        </div>
+        <p data-i18n="footer.copy">&copy; 2026 PT Mitra Akselerasi Amanah Lestari. Hak cipta dilindungi.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="back-to-top" id="backToTop" aria-label="Kembali ke atas">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 19V5M5 12l7-7 7 7"/></svg>
+  </button>
+
+  <a class="whatsapp-float" id="whatsappFloat" href="#" target="_blank" rel="noopener noreferrer" aria-label="Hubungi kami via WhatsApp">
+    <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor" aria-hidden="true"><path d="M17.472 14.382c-.297-.149-1.758-.867-2.03-.967-.273-.099-.471-.148-.67.15-.197.297-.767.966-.94 1.164-.173.199-.347.223-.644.075-.297-.15-1.255-.463-2.39-1.475-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.458.13-.606.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.371-.025-.52-.075-.149-.669-1.612-.916-2.207-.242-.579-.487-.5-.669-.51-.173-.008-.371-.01-.57-.01-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.479 0 1.462 1.065 2.875 1.213 3.074.149.198 2.096 3.2 5.077 4.487.709.306 1.262.489 1.694.625.712.227 1.36.195 1.871.118.571-.085 1.758-.719 2.006-1.413.248-.694.248-1.289.173-1.413-.074-.124-.272-.198-.57-.347m-5.421 7.403h-.004a9.87 9.87 0 01-5.031-1.378l-.361-.214-3.741.982.998-3.648-.235-.374a9.86 9.86 0 01-1.51-5.26c.001-5.45 4.436-9.884 9.888-9.884 2.64 0 5.122 1.03 6.988 2.898a9.825 9.825 0 012.893 6.994c-.003 5.45-4.435 9.884-9.881 9.884m8.413-18.297A11.815 11.815 0 0012.05 0C5.495 0 .16 5.335.157 11.892c0 2.096.547 4.142 1.588 5.945L.057 24l6.305-1.654a11.882 11.882 0 005.683 1.448h.005c6.554 0 11.89-5.335 11.893-11.893a11.821 11.821 0 00-3.48-8.413z"/></svg>
+    <span class="whatsapp-float__tooltip" data-i18n="ui.whatsapp">Chat WhatsApp</span>
+  </a>
+
+  <div class="toast" id="toast" role="status" aria-live="polite"></div>
+
+  <script src="js/config.js"></script>
+  <script src="js/i18n.js"></script>
+  <script src="js/main.js"></script>
+</body>
+</html>

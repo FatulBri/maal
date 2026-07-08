@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 120 40" fill="none" aria-hidden="true">
+  <circle cx="14" cy="10" r="4.5" fill="#16C45B"/>
+  <path d="M8 28c0-6 2.7-10 6-10s6 4 6 10" stroke="#16C45B" stroke-width="3.2" stroke-linecap="round"/>
+  <path d="M18 18c3-1 6 1 7 5 1.5 5-2 9-6 9" stroke="#8AD91F" stroke-width="2.8" stroke-linecap="round"/>
+  <text x="34" y="28" font-family="system-ui, -apple-system, sans-serif" font-size="22" font-weight="700" fill="#16C45B">Falah</text>
+</svg>
