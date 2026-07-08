@@ -128,7 +128,6 @@ h1, h2, h3, h4 {
 .section__label {
   display: inline-flex;
   align-items: center;
-  gap: 8px;
   font-family: var(--font-body);
   font-size: 0.8125rem;
   font-weight: 600;
@@ -136,19 +135,10 @@ h1, h2, h3, h4 {
   text-transform: uppercase;
   color: var(--green-dark);
   margin-bottom: 16px;
-  padding: 6px 14px 6px 10px;
-  background: var(--green-light);
-  border: 1px solid rgba(22, 196, 91, 0.15);
-  border-radius: var(--radius-full);
-}
-
-.section__label::before {
-  content: '';
-  width: 6px;
-  height: 6px;
-  background: var(--green-primary);
-  border-radius: 50%;
-  flex-shrink: 0;
+  padding: 6px 12px;
+  background: transparent;
+  border: none;
+  border-radius: 0;
 }
 
 .section__title {
@@ -420,13 +410,11 @@ h1, h2, h3, h4 {
 .hero__pattern {
   position: absolute;
   inset: 0;
-  background-image:
-    linear-gradient(var(--slate-100) 1px, transparent 1px),
-    linear-gradient(90deg, var(--slate-100) 1px, transparent 1px);
-  background-size: 64px 64px;
-  mask-image: radial-gradient(ellipse 90% 100% at 50% 0%, black 18%, transparent 88%);
-  -webkit-mask-image: radial-gradient(ellipse 90% 100% at 50% 0%, black 18%, transparent 88%);
-  opacity: 0.55;
+  /* removed repeated stripe background to simplify visual */
+  background: none;
+  mask-image: none;
+  -webkit-mask-image: none;
+  opacity: 0;
 }
 
 .hero__blob {
@@ -718,14 +706,9 @@ h1, h2, h3, h4 {
   margin-bottom: 14px;
 }
 
+/* remove thin divider line that created long visible strip */
 .falah-login__divider::before {
-  content: '';
-  position: absolute;
-  top: 50%;
-  left: 0;
-  right: 0;
-  height: 1px;
-  background: var(--slate-200);
+  display: none;
 }
 
 .falah-login__divider span {
@@ -950,22 +933,11 @@ h1, h2, h3, h4 {
   position: relative;
   max-width: 760px;
   margin: 0 auto;
-  padding: 40px 48px;
-  background: var(--bg-white);
-  border-radius: var(--radius-lg);
+  padding: 28px 32px;
+  background: var(--bg-subtle);
+  border-radius: var(--radius-md);
   border: 1px solid var(--slate-200);
-  box-shadow: var(--shadow-card);
-}
-
-.insight-quote::before {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 48px;
-  right: 48px;
-  height: 3px;
-  background: linear-gradient(90deg, var(--green-primary), var(--lime-accent));
-  border-radius: 0 0 4px 4px;
+  box-shadow: none;
 }
 
 .insight-quote__icon { display: none; }
@@ -1001,24 +973,13 @@ h1, h2, h3, h4 {
 .about-intro__highlight {
   font-size: 1.0625rem;
   color: var(--slate-700);
-  padding: 28px 36px;
-  background: var(--bg-subtle);
+  padding: 24px 28px;
+  background: var(--bg-white);
   border-radius: var(--radius-md);
   border: 1px solid var(--slate-200);
   line-height: 1.75;
   text-align: left;
-  position: relative;
-}
-
-.about-intro__highlight::before {
-  content: '';
-  position: absolute;
-  left: 0;
-  top: 20px;
-  bottom: 20px;
-  width: 3px;
-  background: var(--green-primary);
-  border-radius: 0 4px 4px 0;
+  box-shadow: none;
 }
 
 .about-intro__highlight strong { color: var(--green-dark); font-weight: 700; }
@@ -1206,16 +1167,8 @@ h1, h2, h3, h4 {
 }
 
 .service-card::after {
-  content: '';
-  position: absolute;
-  top: 0;
-  left: 0;
-  right: 0;
-  height: 2px;
-  background: var(--green-primary);
-  transform: scaleX(0);
-  transform-origin: left;
-  transition: transform var(--transition);
+  /* subtle accent removed to avoid long horizontal strip */
+  display: none;
 }
 
 .service-card:hover {
